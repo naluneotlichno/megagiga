@@ -46,8 +46,8 @@ func mainHandle(w http.ResponseWriter, req *http.Request) {
     w.Write([]byte(answer))
 }
 
-func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
-    totalCount := 4
+func TestOver(t *testing.T) {
+    totalCount := 4 // общее количество кафе
     req := ... // здесь нужно создать запрос к сервису
 
     responseRecorder := httptest.NewRecorder()
